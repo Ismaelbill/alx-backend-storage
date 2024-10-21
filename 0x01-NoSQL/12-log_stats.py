@@ -11,7 +11,7 @@ def func():
     count = col.count_documents({})
 
     print(count, 'logs')
-    print('Mehtods:')
+    print('Methods:')
     print('\tmethod GET:', col.count_documents({'method': 'GET'}))
     print('\tmethod POST:', col.count_documents({'method': 'POST'}))
     print('\tmethod PUT:', col.count_documents({'method': 'PUT'}))

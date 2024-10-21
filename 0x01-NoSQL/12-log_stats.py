@@ -20,4 +20,5 @@ def func():
     print(col.count_documents({'path': '/status'}), 'status check')
 
 
-func()
+if __name__ == '__main__':
+    func()

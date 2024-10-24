@@ -12,7 +12,7 @@ class Cache:
     """
     def __init__(self) -> None:
         """ creating instance of redis client"""
-        self._redis: redis.Redis = redis.Redis()
+        self._redis = redis.Redis()
         self._redis.flushdb()
 
     def store(self, data: t.Union[str, bytes, int, float]) -> str:
